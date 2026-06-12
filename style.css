@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1b1b1b;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.computer-area,
+.player-area {
+    min-height: 150px;
+}
+
+#player-hand {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.red {
+    background: #e53935;
+}
+
+.blue {
+    background: #1e88e5;
+}
+
+.green {
+    background: #43a047;
+}
+
+.yellow {
+    background: #fdd835;
+    color: black;
+}
+
+.black {
+    background: black;
+}
+
+.center-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.pile-section {
+    display: flex;
+    gap: 30px;
+}
+
+.pile {
+    width: 100px;
+    height: 140px;
+    border-radius: 12px;
+    border: 3px solid white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#draw-pile {
+    background: #444;
+}
+
+#discard-pile {
+    background: #222;
+}
+
+#status {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#draw-btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+#current-color {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
